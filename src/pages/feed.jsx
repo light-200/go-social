@@ -13,6 +13,11 @@ export function Feed() {
             </div>
             <div className="feedPosts">
                 <Post />
+                <Post />
+                <Post />
+                <Post />
+                <Post />
+                <Post />
             </div>
             <div className="feedNotifications">
                 <div className="notificationHeader">
