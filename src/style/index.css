@@ -5,3 +5,44 @@
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
   monospace;
 }
+
+
+.btn{
+  position: relative;
+    width: max-content;
+    max-height: 60px;
+    padding: 10px;
+    display: grid;
+    place-content: center;
+    border: 1px solid rgb(94, 94, 94);
+    border-radius: 5px;
+    margin: 5px;
+    -webkit-transition: transform 90ms ease-in-out;
+}
+
+.btn:hover{
+  color: white;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  background: #383736;
+  bottom: 0;
+  left: 0;
+  right: 100%;
+  top: 0;
+  z-index: -1;
+  border-radius: 5px;
+  -webkit-transition: right 200ms ease-out;
+}
+
+.btn:hover::before {
+  right: 0;
+}
+
+.btn:active{
+  transform: translate(0,2px);
+}
