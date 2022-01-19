@@ -1,13 +1,22 @@
-import './App.css';
+import './style/App.css';
+import { Feed } from './pages/feed';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          This will be go-social
-        </p>
-      </header>
+
+      <div className='navigationContainer'>
+        <nav className='navigation'>
+          <div className='logo'>go-social</div>
+          <div className='navBtns'>
+            <div className="btn navBtn">feed</div>
+            <div className="btn navBtn">profile</div>
+            <div className="btn navBtn">logout</div>
+          </div>
+        </nav>
+      </div>
+
+      <Feed />
     </div>
   );
 }

@@ -1,0 +1,118 @@
+.profileCard{
+    min-width: 250px;
+    height: 400px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid rgb(94, 94, 94);
+    border-radius: 5px;
+
+    font-size: small;
+}
+
+.profileHeader{
+    flex: 1;
+    position: relative;
+}
+
+.profileBanner{
+    width: 100%;
+    background-color: gray;
+    height: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.profilePicture{
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+    margin-left: 10px;
+
+    background-color: pink;
+    transform: translateY(-55%);
+}
+
+.profileBody{
+    flex: 2.5;
+    border:solid rgb(94, 94, 94);
+    border-width: 1px 0;
+    
+}
+
+
+.profileStats{
+    margin-top: 3rem;
+    height: max-content;
+    padding: 1rem;
+}
+
+.profileStats .followers{
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+}
+.profileStats .following{
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly;
+}
+
+.profileIcons{
+    margin: auto;
+    padding: 1rem;
+    max-width: 200px;
+    display: grid;
+    list-style-type: none;
+    grid-template-columns: repeat(auto-fit, minmax(40px,50px));
+    place-items: center;
+    gap: .5rem;
+}
+
+.profileIcons li{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: gray;
+    display: grid;
+    place-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.profileFooter{
+    padding: 1rem;
+    height: min-content;
+}
+
+.addSocials{
+    -webkit-transition: transform 200ms ease-out;
+}
+
+
+.addSocials::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    z-index: -1;
+    background-color: rgb(12, 12, 12);
+    -webkit-transition: right 200ms ease-in;
+}
+
+.addSocials:hover{
+    color: white;
+    border-color: transparent;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.addSocials:hover::before{
+    right: 0;
+}
+
+.addSocials:active{
+    transform: translate(0,2px);
+}
