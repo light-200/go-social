@@ -11,10 +11,10 @@ const Post = () => {
         </div>
         <div className="postBody">
             <div className="postSocialMedia">
-                <li>Y</li>
-                <li>I</li>
-                <li>Li</li>
-                <li>Sp</li>
+                <li className='socialsBtn'>Y</li>
+                <li className='socialsBtn'>I</li>
+                <li className='socialsBtn'>Li</li>
+                <li className='socialsBtn'>Sp</li>
             </div>
         </div>
         <div className="postActions">

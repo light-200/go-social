@@ -77,7 +77,7 @@
     display: grid;
     place-content: center;
     position: relative;
-    overflow: hidden;
+    
 }
 
 .profileFooter{
@@ -85,12 +85,14 @@
     height: min-content;
 }
 
-.addSocials{
+.socialsBtn{
     -webkit-transition: transform 200ms ease-out;
+    position: relative;
+    overflow: hidden;
 }
 
 
-.addSocials::before{
+.socialsBtn::before{
     content: '';
     position: absolute;
     top: 0;
@@ -102,17 +104,17 @@
     -webkit-transition: right 200ms ease-in;
 }
 
-.addSocials:hover{
+.socialsBtn:hover{
     color: white;
     border-color: transparent;
     cursor: pointer;
     background-color: transparent;
 }
 
-.addSocials:hover::before{
+.socialsBtn:hover::before{
     right: 0;
 }
 
-.addSocials:active{
-    transform: translate(0,2px);
+.socialsBtn:active{
+    transform: translate(0,5px);
 }
