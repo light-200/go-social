@@ -1,5 +1,5 @@
-import React,{useState} from 'react'
-import styles from './signup.module.css';
+import React,{useState} from 'react';
+import '../style/signup.css';
 
 export default function Signup() {
 
@@ -15,12 +15,12 @@ export default function Signup() {
     }
 
     return (
-        <div className={styles.page}>
-            <div className={styles.container}>
-                <span  className={styles.img}>
+        <div className="page">
+            <div className="container">
+                <span  className="img">
                     <img src="sd" alt="adad"/>
                 </span>
-                <form onSubmit={handleSubmit} className={styles.form}>
+                <form onSubmit={handleSubmit} className="form">
                     <h1 style={{textAlign:"center"}}>Signup to start</h1>  
                     <label htmlFor="name" className="materialLabel">Name:</label>
                     <input type="text" name="name" placeholder="Jon" className="materialInput" value={form.name}  onChange={handleChange} />
