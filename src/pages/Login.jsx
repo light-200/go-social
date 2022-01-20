@@ -1,7 +1,7 @@
-import React,{useState} from 'react'
-import styles from './login.module.css';
+import React,{useState} from 'react';
+import '../style/login.css';
 
-export default function Signup() {
+export default function Login() {
 
     const [form,setForm] = useState({email:'',password:''});
 
@@ -15,12 +15,12 @@ export default function Signup() {
     }
 
     return (
-        <div className={styles.page}>
-            <div className={styles.container}>
-                <span  className={styles.img}>
+        <div className="page">
+            <div className="container">
+                <span  className="img">
                     <img src="sd" alt="adad"/>
                 </span>
-                <form onSubmit={handleSubmit} className={styles.form}>
+                <form onSubmit={handleSubmit} className="form">
                     <h1 style={{textAlign:"center"}}>Welcome</h1>  
                     <label htmlFor="name" className="materialLabel">Email:</label>
                     <input type="text" name="email" placeholder="you@company.com" className="materialInput" value={form.email}  onChange={handleChange}  />
