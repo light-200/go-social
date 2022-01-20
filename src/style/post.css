@@ -52,7 +52,7 @@
     gap: .5rem;
 }
 
-.postSocialMedia li{
+.postSocialMedia a{
     width: 30px;
     height: 30px;
     border-radius: 50%;

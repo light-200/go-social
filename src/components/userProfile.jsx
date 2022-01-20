@@ -1,7 +1,7 @@
 import React from 'react';
 import '../style/feedProfile.css';
 
-export function UserProfile() {
+export function UserProfile({ data }) {
     return (<div className="profileCard">
         <div className="profileHeader">
             <div className="profileBanner">
@@ -23,11 +23,11 @@ export function UserProfile() {
                 </div>
             </div>
             <div className="profileIcons">
-                <li className='socialsBtn'>Y</li>
-                <li className='socialsBtn'>I</li>
-                <li className='socialsBtn'>Li</li>
-                <li className='socialsBtn'>Sp</li>
-                <li className='socialsBtn'>+</li>
+                <a className='socialsBtn' target='_blank'>Y</a>
+                <a className='socialsBtn' target='_blank'>I</a>
+                <a className='socialsBtn' target='_blank'>li</a>
+                <a className='socialsBtn' target='_blank'>Sp</a>
+                <a className='socialsBtn' target='_blank'>+</a>
             </div>
         </div>
         <div className="profileFooter">

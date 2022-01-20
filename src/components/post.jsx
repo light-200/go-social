@@ -1,5 +1,6 @@
 import '../style/post.css';
-const Post = () => {
+const Post = ({ data }) => {
+
     return (<div className="post">
         <div className="postHeader">
             <div className="postBanner">
@@ -11,10 +12,10 @@ const Post = () => {
         </div>
         <div className="postBody">
             <div className="postSocialMedia">
-                <li className='socialsBtn'>Y</li>
-                <li className='socialsBtn'>I</li>
-                <li className='socialsBtn'>Li</li>
-                <li className='socialsBtn'>Sp</li>
+                <a className='socialsBtn' href={"#"} target='_blank'>Y</a>
+                <a className='socialsBtn' href={"#"} target='_blank'>I</a>
+                <a className='socialsBtn' href={"#"} target='_blank'>li</a>
+                <a className='socialsBtn' href={"#"} target='_blank'>Sp</a>
             </div>
         </div>
         <div className="postActions">
