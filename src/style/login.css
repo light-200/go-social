@@ -5,11 +5,16 @@
     place-items: center;
 }
 
+.form > h1{
+    margin-bottom: 10px;
+    text-align: center;
+}
+
 .container{
     height: 400px;
     width: 50vw;
     border: solid 1px black;
-    padding: 10px 10em;
+    padding: 10px 4em;
     border: solid 1px rgba(0, 0, 0, 0.23);
     border-radius: 4px;
     display: flex;

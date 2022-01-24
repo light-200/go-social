@@ -80,16 +80,17 @@
 
 .materialButton{
   height: 45px;
+  position: relative;
   border: solid 1px rgba(0, 0, 0, 0.23);
   background-color: white;
   color:rgb(0, 114, 229);
   padding: 5px;
   width: 94%;
   border-radius: 4px;
-  margin-left: 10px;
   font-size: 1.04em;
   text-transform: uppercase;
   cursor: pointer;
+  transition: ease-in-out;
   border: solid 1px rgba(0, 114, 229, 0.801);
 }
 
@@ -98,6 +99,10 @@
   border:solid 1px rgb(0, 114, 229);
 }
 
+.materialButton:active{
+  top:1px;
+  left:1px;
+}
 
 a{
   text-decoration: none;
