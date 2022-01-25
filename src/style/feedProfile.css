@@ -1,122 +1,118 @@
-.profileCard{
-    min-width: 250px;
-    height: 400px;
-    min-height: 400px;
-    display: flex;
-    flex-direction: column;
+.profileCard {
+  min-width: 250px;
+  height: 400px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
 
-    border: 1px solid rgb(94, 94, 94);
-    border-radius: 5px;
+  border: 1px solid rgb(94, 94, 94);
+  border-radius: 5px;
 
-    font-size: small;
+  font-size: small;
 }
 
-.profileHeader{
-    flex: 1;
-    position: relative;
+.profileHeader {
+  flex: 1;
+  position: relative;
 }
 
-.profileBanner{
-    width: 100%;
-    background-color: gray;
-    height: 100%;
-    border-radius: 5px 5px 0 0;
+.profileBanner {
+  width: 100%;
+  background-color: gray;
+  height: 100%;
+  border-radius: 5px 5px 0 0;
 }
 
-.profilePicture{
-    width: 80px;
-    height: 80px;
-    border-radius: 100px;
-    margin-left: 10px;
+.profilePicture {
+  width: 80px;
+  height: 80px;
+  border-radius: 100px;
+  margin-left: 10px;
 
-    background-color: pink;
-    transform: translateY(-55%);
+  background-color: pink;
+  transform: translateY(-55%);
 }
 
-.profileBody{
-    flex: 2.5;
-    border:solid rgb(94, 94, 94);
-    border-width: 1px 0;
-    
+.profileBody {
+  flex: 2.5;
+  border: solid rgb(94, 94, 94);
+  border-width: 1px 0;
 }
 
-
-.profileStats{
-    margin-top: 3rem;
-    height: max-content;
-    padding: 1rem;
+.profileStats {
+  margin-top: 3rem;
+  height: max-content;
+  padding: 1rem;
 }
 
-.profileStats .followers{
-    flex: 1;
-    display: flex;
-    justify-content: space-evenly;
+.profileStats .followers {
+  flex: 1;
+  display: flex;
+  justify-content: space-evenly;
 }
-.profileStats .following{
-    display: flex;
-    flex: 1;
-    justify-content: space-evenly;
-}
-
-.profileIcons{
-    margin: auto;
-    padding: 1rem;
-    max-width: 200px;
-    display: grid;
-    list-style-type: none;
-    grid-template-columns: repeat(auto-fit, minmax(40px,50px));
-    place-items: center;
-    gap: .5rem;
+.profileStats .following {
+  display: flex;
+  flex: 1;
+  justify-content: space-evenly;
 }
 
-.profileIcons a{
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: gray;
-    display: grid;
-    place-content: center;
-    position: relative;
-    
+.profileIcons {
+  margin: auto;
+  padding: 1rem;
+  max-width: 200px;
+  display: grid;
+  list-style-type: none;
+  grid-template-columns: repeat(auto-fit, minmax(40px, 50px));
+  place-items: center;
+  gap: 0.5rem;
 }
 
-.profileFooter{
-    padding: 1rem;
-    height: min-content;
+.profileIcons a {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: gray;
+  display: grid;
+  place-content: center;
+  position: relative;
 }
 
-.socialsBtn{
-    transition:  transform 100ms ease-out;
-    -webkit-transition: transform 100ms ease-out;
-    position: relative;
-    overflow: hidden;
+.profileFooter {
+  padding: 1rem;
+  height: min-content;
 }
 
-
-.socialsBtn::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 100%;
-    bottom: 0;
-    z-index: -1;
-    background-color: rgb(12, 12, 12);
-    transition: right 200ms ease-in;
-    -webkit-transition: right 200ms ease-in;
+.socialsBtn {
+  transition: transform 100ms ease-out;
+  -webkit-transition: transform 100ms ease-out;
+  position: relative;
+  overflow: hidden;
 }
 
-.socialsBtn:hover{
-    color: white;
-    border-color: transparent;
-    cursor: pointer;
-    background-color: transparent;
+.socialsBtn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  z-index: -1;
+  background-color: rgb(12, 12, 12);
+  transition: right 200ms ease-in;
+  -webkit-transition: right 200ms ease-in;
 }
 
-.socialsBtn:hover::before{
-    right: 0;
+.socialsBtn:hover {
+  color: white;
+  border-color: transparent;
+  cursor: pointer;
+  background-color: transparent;
 }
 
-.socialsBtn:active{
-    transform: translate(0,5px);
+.socialsBtn:hover::before {
+  right: 0;
+}
+
+.socialsBtn:active {
+  transform: translate(0, 5px);
 }

@@ -1,26 +1,24 @@
-.feedContainer{
-    display: flex;
-    width: fit-content;
-    max-width: 1000px;
-    margin: auto;
-    flex: 1;
+.feedContainer {
+  display: flex;
+  width: fit-content;
+  max-width: 1000px;
+  margin: auto;
+  flex: 1;
 }
 
-.feedProfile{
-    flex: 2;
-    padding: 1rem;
+.feedProfile {
+  flex: 2;
+  padding: 1rem;
 }
 
-.feedPosts{
-    flex: 4;
-    padding: 0 1rem;
-    border: solid rgb(48, 48, 48);
-    border-width: 0 1px;
+.feedPosts {
+  flex: 4;
+  padding: 0 1rem;
+  border: solid rgb(48, 48, 48);
+  border-width: 0 1px;
 }
 
-.feedNotifications{
-    flex: 2;
-    padding: 1rem;
+.feedNotifications {
+  flex: 2;
+  padding: 1rem;
 }
-
-
