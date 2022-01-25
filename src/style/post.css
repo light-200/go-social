@@ -1,69 +1,70 @@
-.post{
-    min-width: 100%;
-    height: 300px;
-    min-height: 300px;
-    display: flex;
-    flex-direction: column;
+.post {
+  min-width: 100%;
+  height: 300px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
 
-    border: 1px solid rgb(94, 94, 94);
-    border-radius: 5px;
+  border: 1px solid rgb(94, 94, 94);
+  border-radius: 5px;
 
-    font-size: small;
-    margin-top: 1rem;
+  font-size: small;
+  margin-top: 1rem;
 }
 
-.postHeader{
-    flex: 1;
-    position: relative;
+.postHeader {
+  flex: 1;
+  position: relative;
 }
 
-.postBanner{
-    width: 100%;
-    background-color: gray;
-    height: 100%;
-    border-radius: 5px 5px 0 0;
+.postBanner {
+  width: 100%;
+  background-color: gray;
+  height: 100%;
+  border-radius: 5px 5px 0 0;
 }
 
-.postProfile{
-    width: 80px;
-    height: 80px;
-    border-radius: 100px;
-    margin-left: 10px;
+.postProfile {
+  width: 80px;
+  height: 80px;
+  border-radius: 100px;
+  margin-left: 10px;
+  display: block;
 
-    background-color: pink;
-    transform: translateY(-55%);
+  background-color: pink;
+  transform: translateY(-55%);
 }
 
-.postBody{
-    flex: 3;
-    border:solid rgb(94, 94, 94);
-    border-width: 1px 0;
+.postBody {
+  flex: 3;
+  border: solid rgb(94, 94, 94);
+  border-width: 1px 0;
 }
 
-.postSocialMedia{
-    margin-top: 3rem;
-    display: grid;
-    padding: 1rem;
-    width: 100%;
-    height: auto;
-    list-style-type: none;
-    grid-template-columns: repeat(auto-fit, minmax(40px,50px));
-    place-items: center;
-    gap: .5rem;
+.postSocialMedia {
+  margin-top: 3rem;
+  display: grid;
+  padding: 1rem;
+  width: 100%;
+  height: auto;
+  list-style-type: none;
+  grid-template-columns: repeat(auto-fit, minmax(40px, 50px));
+  place-items: center;
+  gap: 0.5rem;
 }
 
-.postSocialMedia a{
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: gray;
-    display: grid;
-    place-content: center;
+.postSocialMedia a {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: gray;
+  display: grid;
+  place-content: center;
 }
 
-.postActions{
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+.postActions {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }

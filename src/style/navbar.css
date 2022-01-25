@@ -1,30 +1,26 @@
+.navigationContainer {
+  height: 3rem;
+  max-height: 3rem;
+  width: 100%;
+  border: solid rgb(94, 94, 94);
+  border-width: 0 0 1px 0;
+}
 
-.navigationContainer{
-    height: 3rem;
-    max-height: 3rem;
-    width: 100%;
-    border: solid rgb(94, 94, 94);
-    border-width: 0 0 1px 0;
-  }
-  
-  .navigation{
-    display: flex;
-    margin: auto;
-    width: 100%;
-    height: 100%;
-    max-width: 1000px;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .logo{
-    flex: 1;
-  }
-  .navBtns{
-    display: flex;
-    flex: 3;
-    justify-content: right;
-  }
-  
-  
-  
+.navigation {
+  display: flex;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  max-width: 1000px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  flex: 1;
+}
+.navBtns {
+  display: flex;
+  flex: 3;
+  justify-content: right;
+}
