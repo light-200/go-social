@@ -1,0 +1,170 @@
+.userCard {
+    min-width: 250px;
+    height: 999px;
+    min-height: 999px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(94, 94, 94);
+    border-radius: 5px;
+    font-size: small;
+  }
+  
+  .userHeader {
+    flex: 1;
+    position: relative;
+  }
+  
+  .userBanner {
+    width: 100%;
+    background-color: gray;
+    height: 100%;
+    border-radius: 5px 5px 0 0;
+  }
+  
+  .userPicture {
+    width: 168px;
+    height: 168px;
+    border-radius: 100px;
+    /* margin-left: 10px; */
+    display: block;
+    margin: 0 auto;
+    background-color: pink;
+    transform: translateY(-55%);
+  }
+  
+  .userBody {
+    flex: 2.5;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 2fr;
+    border: solid rgb(94, 94, 94);
+    border-width: 1px 0;
+  }
+  
+  .userStats {
+    margin-top: 6rem;
+    margin-left: 2rem;
+    height: max-content;
+    padding: 1rem;
+    border: 1px solid rgb(94, 94, 94);
+    border-radius: 4px ;
+  }
+
+
+  .userPost{
+    margin-top: 6rem;
+    margin-right: 2rem;
+    height: 500px;
+    padding: 1rem;
+    border: 1px solid rgb(94, 94, 94);
+    overflow: scroll;
+    border-radius: 4px ;
+
+  }
+  
+  .userStats .followers {
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1rem 0 ;
+  }
+  .userStats .following {
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly;
+    margin: 1rem 0 ;
+  }
+  
+  .userIcons {
+    margin: auto;
+    padding: 1rem;
+    max-width: 200px;
+    display: grid;
+    list-style-type: none;
+    grid-template-columns: repeat(auto-fit, minmax(40px, 50px));
+    place-items: center;
+    gap: 0.5rem;
+  }
+  
+  .userIcons a {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: gray;
+    display: grid;
+    place-content: center;
+    position: relative;
+  }
+  
+  .userFooter {
+    padding: 1rem;
+    height: min-content;
+  }
+  
+  .socialsBtn {
+    transition: transform 100ms ease-out;
+    -webkit-transition: transform 100ms ease-out;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .socialsBtn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    z-index: -1;
+    background-color: rgb(12, 12, 12);
+    transition: right 200ms ease-in;
+    -webkit-transition: right 200ms ease-in;
+  }
+  
+  .socialsBtn:hover {
+    color: white;
+    border-color: transparent;
+    cursor: pointer;
+    background-color: transparent;
+  }
+  
+  .socialsBtn:hover::before {
+    right: 0;
+  }
+  
+  .socialsBtn:active {
+    transform: translate(0, 5px);
+  }
+  
+  .userTag{
+    width: max-content;
+    height: max-content;
+    min-width: 60px;
+    border: 1px solid rgb(94, 94, 94);
+    padding: 4px;
+    border-radius: 24px;
+
+  }
+
+  .tags{
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+    overflow: scroll;
+    /* border: 1px solid rgb(94, 94, 94); */
+    height: 100px;
+  }
+
+  .userTag:hover{
+    color: white;
+    border-color: transparent;
+    cursor: pointer;
+    background: #383736;
+
+  }
+
+.userDesc{
+    /* border: 1px solid rgb(94, 94, 94); */
+    margin-top: 1rem;
+    padding: 0 2rem;
+}
