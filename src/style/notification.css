@@ -1,20 +1,20 @@
-.notificationHeader{
-    padding: 1rem;
+.notificationHeader {
+  padding: 1rem;
 }
 
-.feedNotification{
-    min-width: 200px;
-    height: fit-content;
-    display: flex;
+.feedNotification {
+  min-width: 200px;
+  height: fit-content;
+  display: flex;
 
-    border: 1px solid rgb(94, 94, 94);
-    border-radius: 5px;
+  border: 1px solid rgb(94, 94, 94);
+  border-radius: 5px;
 
-    font-size: small;
+  font-size: small;
 }
 
-.feedNotification span{
-    padding: 10px;
-    display: grid;
-    place-content: center;
+.feedNotification span {
+  padding: 10px;
+  display: grid;
+  place-content: center;
 }
