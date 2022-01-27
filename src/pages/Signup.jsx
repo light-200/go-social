@@ -27,30 +27,33 @@ export default function Signup() {
           <input
             type="text"
             name="name"
+            id="name"
             placeholder="Jon"
             className="materialInput"
             value={form.name}
             onChange={handleChange}
             required
           />
-          <label htmlFor="name" className="materialLabel">
+          <label htmlFor="email" className="materialLabel">
             Email:
           </label>
           <input
             type="email"
             name="email"
+            id="email"
             placeholder="you@company.com"
             className="materialInput"
             value={form.email}
             onChange={handleChange}
             required
           />
-          <label htmlFor="name" className="materialLabel">
+          <label htmlFor="password" className="materialLabel">
             Password:
           </label>
           <input
             type="password"
             name="password"
+            id="password"
             placeholder="123456"
             className="materialInput"
             value={form.password}
